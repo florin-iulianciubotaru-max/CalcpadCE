@@ -53,4 +53,4 @@ jobs:
           header: pr-preview
           message: >
             Documentation preview:
-            https://${{ github.event.workflow_run.head_repository.owner.login }}.github.io/${{ github.event.workflow_run.head_repository.name }}/pr-preview/pr-${{ steps.pr.outputs.number }}/
+            https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-preview/pr-${{ steps.pr.outputs.number }}/
